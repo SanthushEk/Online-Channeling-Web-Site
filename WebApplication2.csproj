@@ -1,0 +1,231 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B185DD06-E7CD-4415-B396-E52CD42E934E}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebApplication2</RootNamespace>
+    <AssemblyName>WebApplication2</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Apoinments\css\style.css" />
+    <Content Include="Apoinments\html\Doc_01.html" />
+    <Content Include="App_Data\Database.mdf" />
+    <Content Include="App_Data\Database_log.ldf">
+      <DependentUpon>Database.mdf</DependentUpon>
+    </Content>
+    <Content Include="login\connection.php" />
+    <Content Include="login\controllerUserData.php" />
+    <Content Include="Css\About.css" />
+    <Content Include="Css\Main.css" />
+    <Content Include="Css\normalize.css" />
+    <Content Include="Css\Home.css" />
+    <Content Include="Css\Doctor.css" />
+    <Content Include="Css\Contact.css" />
+    <Content Include="Css\Blog.css" />
+    <Content Include="Css\Payment.css" />
+    <Content Include="Css\Service.css" />
+    <Content Include="Doctors_profiles\css\Doctor_01.css" />
+    <Content Include="Doctors_profiles\html\Doctor_06.html" />
+    <Content Include="Doctors_profiles\html\Doctor_01.html" />
+    <Content Include="Doctors_profiles\html\Doctor_02.html" />
+    <Content Include="Doctors_profiles\html\Doctor_03.html" />
+    <Content Include="Doctors_profiles\html\Doctor_04.html" />
+    <Content Include="Doctors_profiles\html\Doctor_05.html" />
+    <Content Include="login\home.php" />
+    <Content Include="Images\100.jpg" />
+    <Content Include="Images\24-hours %281%29.png" />
+    <Content Include="Images\adib-hussain-e6G3xJV908g-unsplash.jpg" />
+    <Content Include="Images\artem-beliaikin-6SPU6-KkyhA-unsplash - Copy.jpg" />
+    <Content Include="Images\artem-beliaikin-6SPU6-KkyhA-unsplash.jpg" />
+    <Content Include="Images\btn_google_dark_focus_xxhdpi.9.png" />
+    <Content Include="Images\bv-removebg-preview.png" />
+    <Content Include="Images\bv.png" />
+    <Content Include="Images\chang-duong-Sj0iMtq_Z4w-unsplash.jpg" />
+    <Content Include="Images\christopher-lemercier-12yvdCiLaVE-unsplash.jpg" />
+    <Content Include="Images\cover.jpg" />
+    <Content Include="Images\cross.png" />
+    <Content Include="Images\doc1 %282%29.png" />
+    <Content Include="Images\doc1.png" />
+    <Content Include="Images\doc2.png" />
+    <Content Include="Images\doc3.png" />
+    <Content Include="Images\doc4.png" />
+    <Content Include="Images\doc6.png" />
+    <Content Include="Images\doc7.png" />
+    <Content Include="Images\doctor-14035.png" />
+    <Content Include="Images\doctor-14063.png" />
+    <Content Include="Images\Doctor-Transparent-Free-PNG.png" />
+    <Content Include="Images\doctor_PNG16043.png" />
+    <Content Include="Images\facebook.png" />
+    <Content Include="Images\google.png" />
+    <Content Include="Images\humberto-chavez-FVh_yqLR9eA-unsplash.jpg" />
+    <Content Include="Images\ian-stauffer-uftqFbfWGFY-unsplash.jpg" />
+    <Content Include="Images\jake-nackos-IF9TK5Uy-KI-unsplash.jpg" />
+    <Content Include="Images\jason-dent-UNDqO_CL30s-unsplash.jpg" />
+    <Content Include="Images\julian-wan-WNoLnJo7tS8-unsplash.jpg" />
+    <Content Include="Images\loupe.png" />
+    <Content Include="Images\mario-gogh-VBLHICVh-lI-unsplash.jpg" />
+    <Content Include="Images\medical-technology-icon-set-health-wellness.jpg" />
+    <Content Include="Images\menu.png" />
+    <Content Include="Images\nik-shuliahin-BuNWp1bL0nc-unsplash.jpg" />
+    <Content Include="Images\noah-silliman-gzhyKEo_cbU-unsplash.jpg" />
+    <Content Include="Images\nonresident-c4Gt0PtW7Ec-unsplash.jpg" />
+    <Content Include="Images\nonresident-GSfzoaI1et4-unsplash.jpg" />
+    <Content Include="Images\nonresident-NidNoMaFr1g-unsplash.jpg" />
+    <Content Include="Images\nordwood-themes-q8U1YgBaRQk-unsplash.jpg" />
+    <Content Include="Images\Reg_icon.png" />
+    <Content Include="Images\ribbon.png" />
+    <Content Include="Images\ss.png" />
+    <Content Include="Images\stethoscope.png" />
+    <Content Include="Images\team-young-specialist-doctors-standing-corridor-hospital.jpg" />
+    <Content Include="Images\tyler-nix-X2YO8KFxgEM-unsplash.jpg" />
+    <Content Include="Images\user-img3.jpg" />
+    <Content Include="Images\user.png" />
+    <Content Include="Images\User_img07.jpg" />
+    <Content Include="Images\User_img08.jpg" />
+    <Content Include="Images\user_img1.jpg" />
+    <Content Include="Images\user_img2.jpg" />
+    <Content Include="Images\user_img4.jpg" />
+    <Content Include="Images\user_img5.jpg" />
+    <Content Include="Images\user_img6.jpg" />
+    <Content Include="Images\wallpaperflare-cropped-removebg-preview.png" />
+    <Content Include="Images\wallpaperflare.com_wallpaper %285%29.jpg" />
+    <Content Include="Images\wallpaperflare.com_wallpaper %289%29.jpg" />
+    <Content Include="Images\webinar.png" />
+    <Content Include="Images\wp2219690-healthcare-wallpapers.jpg" />
+    <Content Include="Images\wp9023741-solid-4k-wallpapers.jpg" />
+    <Content Include="login\Login_user.php" />
+    <Content Include="Main.html" />
+    <Content Include="Pages\Home.html" />
+    <Content Include="JS\Service.js" />
+    <Content Include="JS\script.js" />
+    <Content Include="JS\Doctor.js" />
+    <Content Include="JS\Contact.js" />
+    <Content Include="JS\Blog.js" />
+    <Content Include="JS\About.js" />
+    <Content Include="Pages\About.html" />
+    <Content Include="Pages\Doctors.html" />
+    <Content Include="Pages\Contact.html" />
+    <Content Include="Pages\Blog.html" />
+    <Content Include="Pages\Payment.html" />
+    <Content Include="Pages\Service.html" />
+    <Content Include="login\sign-user.php" />
+    <Content Include="Sign_in\app.js" />
+    <Content Include="Sign_in\index.html" />
+    <Content Include="Sign_in\style.css" />
+    <Content Include="Videos\pexels-tima-miroshnichenko-5713506.mp4" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Code\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>53758</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:53758/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

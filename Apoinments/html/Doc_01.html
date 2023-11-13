@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Appoinment</title>
+    <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+    <div class="container">
+        <form onsubmit="sendEmail(), reset(); return false;   ">
+            <h3>Appoinment</h3>
+            <input type:text id="name" placeholder="Your name" required />
+            <input type:email id="email" placeholder="Email id" required />
+            <input type:text id="phone" placeholder="phone no" required />
+            <label for="gender">Gender</label>
+
+            <select name="gender" id="gender">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+
+            </select>
+
+            <input type:text id="address" placeholder="Address" required />
+            <input type="text" id="date" placeholder="YYYY-MM-DD" required pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}" title="yyyy/mm/dd" />
+
+            <label for="time">Choose Time Perode </label>
+
+            <select name="time" id="time">
+
+                <option value="8:00 am - 10:00 am">8:00 am - 10:00 am</option>
+                <option value="1:00 pm - 3:00 pm">1:00 pm - 2:00 pm</option>
+                <option value="6:00 pm - 8:00 pm">6:00 pm - 8:00 pm</option>
+
+            </select>
+
+            <textarea id="message" rows="4" placeholder="Special Medical Considerations..."></textarea>
+
+            <button type="submit">Submit</button>
+         
+            <a href="../../Pages/Home.html">Back To Home</a>
+
+
+        </form>
+    </div>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    <script>
+        function sendEmail() {
+            Email.send({
+                SecureToken: "57e5907e-e6d7-4451-bfa9-90eadfa517b6",
+                To: 'santhushekanayake30@gmail.com',
+                Bcc: document.getElementById("email").value,
+                From: document.getElementById("email").value,
+                Subject: "New Appoinment From psyche.com",
+                Body:
+
+                    "************* Doctor You have a New Appoinment *************"
+
+                    + "<br> Name :" + document.getElementById("name").value
+                    + "<br> Email :" + document.getElementById("email").value
+                    + "<br> Gender : " + document.getElementById("gender").value
+                    + "<br> Phone number : " + document.getElementById("phone").value
+                    + "<br> Address : " + document.getElementById("address").value
+                    + "<br> Date : " + document.getElementById("date").value
+                    + "<br> Time : " + document.getElementById("time").value
+                    + "<br> Message :" + document.getElementById("message").value
+                    + "<br> Appoinmnet Link : via Zoom link "
+                    + "<br>"
+                    + "<br> ** If You wont to cancle the apooinment please send a e mail or contact the addimistration **"
+
+           }).then(
+                message => alert("Message Send Successfully")
+             );
+        }
+
+       
+ 
+    </script>
+
+
+</body>
+</html>
+
